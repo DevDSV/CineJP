@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineJP - Compra de Ingressos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao CineJP</h1>
+        <div id="step1" class="step">
+            <h2>Gostaria de ver os filmes em cartaz?</h2>
+            <button onclick="selectMovie('Vingadores')">Vingadores</button>
+            <button onclick="selectMovie('Hulk')">Hulk</button>
+            <button onclick="selectMovie('Homem de Ferro')">Homem de Ferro</button>
+        </div>
+
+        <div id="step2" class="step hidden">
+            <h2>Escolha o horário:</h2>
+            <button onclick="selectTime('Agora')">Agora</button>
+            <button onclick="selectTime('Agora Mesmo')">Agora Mesmo</button>
+            <button onclick="selectTime('Nesse Momento')">Nesse Momento</button>
+            <button onclick="selectTime('Nesse Instante')">Nesse Instante</button>
+        </div>
+
+        <div id="step3" class="step hidden">
+            <h2>Escolha um assento:</h2>
+            <button onclick="selectSeat('J01')">J01</button>
+            <button onclick="selectSeat('J02')">J02</button>
+        </div>
+
+        <div id="step4" class="step hidden">
+            <h2>Escolha o tipo de ingresso:</h2>
+            <button onclick="selectTicketType('Inteira')">Inteira</button>
+            <button onclick="selectTicketType('Meia')">Meia</button>
+            <button onclick="selectTicketType('Promoção Dia Dos Namorados')">Promoção Dia Dos Namorados</button>
+        </div>
+
+        <div id="step5" class="step hidden">
+            <h2>Escolha a forma de pagamento:</h2>
+            <button onclick="selectPayment('Beijo')">Beijo</button>
+            <button onclick="selectPayment('Abraço')">Abraço</button>
+        </div>
+
+        <div id="step6" class="step hidden">
+            <h2>Pagamento Realizado, tenha um bom filme!</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
